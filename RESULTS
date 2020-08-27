@@ -1,0 +1,110 @@
+# Typical results
+
+## with lts-15.16 (ghc-8.8.3)
+
+benchmarking P.readProcess
+time                 1.085 ms   (1.074 ms .. 1.094 ms)
+                     0.999 R²   (0.999 R² .. 0.999 R²)
+mean                 1.083 ms   (1.076 ms .. 1.093 ms)
+std dev              28.06 μs   (20.05 μs .. 40.22 μs)
+variance introduced by outliers: 15% (moderately inflated)
+
+benchmarking T.readProcess_
+time                 6.770 ms   (4.994 ms .. 8.132 ms)
+                     0.690 R²   (0.499 R² .. 0.850 R²)
+mean                 5.314 ms   (4.385 ms .. 6.168 ms)
+std dev              2.428 ms   (1.939 ms .. 2.977 ms)
+variance introduced by outliers: 97% (severely inflated)
+
+
+benchmarking P.readProcess
+time                 1.075 ms   (1.066 ms .. 1.089 ms)
+                     0.998 R²   (0.996 R² .. 0.999 R²)
+mean                 1.101 ms   (1.090 ms .. 1.117 ms)
+std dev              45.82 μs   (34.50 μs .. 60.70 μs)
+variance introduced by outliers: 31% (moderately inflated)
+
+benchmarking T.readProcess_
+time                 8.363 ms   (6.024 ms .. 9.830 ms)
+                     0.742 R²   (0.513 R² .. 0.920 R²)
+mean                 6.852 ms   (6.104 ms .. 7.592 ms)
+std dev              2.241 ms   (1.799 ms .. 2.753 ms)
+variance introduced by outliers: 94% (severely inflated)
+
+
+benchmarking P.readProcess
+time                 1.126 ms   (1.090 ms .. 1.172 ms)
+                     0.991 R²   (0.981 R² .. 0.998 R²)
+mean                 1.115 ms   (1.098 ms .. 1.138 ms)
+std dev              67.35 μs   (47.25 μs .. 100.2 μs)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking T.readProcess_
+time                 4.535 ms   (1.947 ms .. 6.727 ms)
+                     0.436 R²   (0.245 R² .. 0.613 R²)
+mean                 4.132 ms   (3.283 ms .. 5.053 ms)
+std dev              2.661 ms   (2.294 ms .. 3.221 ms)
+variance introduced by outliers: 98% (severely inflated)
+
+## with lts-14.27 (ghc-8.6.5)
+
+benchmarking P.readProcess
+time                 1.091 ms   (1.071 ms .. 1.117 ms)
+                     0.988 R²   (0.975 R² .. 0.997 R²)
+mean                 1.149 ms   (1.131 ms .. 1.188 ms)
+std dev              87.44 μs   (51.90 μs .. 129.8 μs)
+variance introduced by outliers: 60% (severely inflated)
+
+benchmarking T.readProcess_
+time                 8.242 ms   (6.700 ms .. 9.590 ms)
+                     0.845 R²   (0.720 R² .. 0.954 R²)
+mean                 8.132 ms   (7.423 ms .. 8.653 ms)
+std dev              1.851 ms   (1.444 ms .. 2.285 ms)
+variance introduced by outliers: 88% (severely inflated)
+
+
+benchmarking P.readProcess
+time                 1.112 ms   (1.089 ms .. 1.139 ms)
+                     0.997 R²   (0.994 R² .. 0.999 R²)
+mean                 1.114 ms   (1.104 ms .. 1.126 ms)
+std dev              37.94 μs   (30.87 μs .. 50.08 μs)
+variance introduced by outliers: 22% (moderately inflated)
+
+benchmarking T.readProcess_
+time                 7.709 ms   (5.590 ms .. 9.404 ms)
+                     0.704 R²   (0.507 R² .. 0.864 R²)
+mean                 5.744 ms   (4.808 ms .. 6.723 ms)
+std dev              2.675 ms   (2.307 ms .. 3.147 ms)
+variance introduced by outliers: 97% (severely inflated)
+
+
+## with nightly-2020-08-27 (ghc-8.10.2)
+
+benchmarking P.readProcess
+time                 1.062 ms   (1.039 ms .. 1.080 ms)
+                     0.996 R²   (0.995 R² .. 0.998 R²)
+mean                 1.097 ms   (1.088 ms .. 1.112 ms)
+std dev              37.28 μs   (24.18 μs .. 63.69 μs)
+variance introduced by outliers: 22% (moderately inflated)
+
+benchmarking T.readProcess_
+time                 5.250 ms   (2.824 ms .. 7.510 ms)
+                     0.482 R²   (0.228 R² .. 0.746 R²)
+mean                 5.596 ms   (4.598 ms .. 6.609 ms)
+std dev              2.666 ms   (2.234 ms .. 3.180 ms)
+variance introduced by outliers: 97% (severely inflated)
+
+
+benchmarking P.readProcess
+time                 1.102 ms   (1.082 ms .. 1.127 ms)
+                     0.998 R²   (0.996 R² .. 0.999 R²)
+mean                 1.104 ms   (1.094 ms .. 1.121 ms)
+std dev              40.97 μs   (26.72 μs .. 87.44 μs)
+variance introduced by outliers: 26% (moderately inflated)
+
+benchmarking T.readProcess_
+time                 5.785 ms   (3.952 ms .. 8.089 ms)
+                     0.553 R²   (0.377 R² .. 0.745 R²)
+mean                 5.014 ms   (4.122 ms .. 5.968 ms)
+std dev              2.812 ms   (2.454 ms .. 3.228 ms)
+variance introduced by outliers: 97% (severely inflated)
